@@ -1,5 +1,5 @@
 - name: install nginx at a time in multiple servers
-  hosts: web
+  hosts: nginx
 
   tasks:
   - name: install nginx
@@ -7,3 +7,8 @@
       name: nginx
       state: installed
       enabled: true
+
+  - name: start nginx
+    ansible.builtin.service:
+      name: nginx
+      state: started    
