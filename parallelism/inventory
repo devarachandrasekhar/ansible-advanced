@@ -1,0 +1,9 @@
+[nginx]
+
+3.92.84.162
+52.90.96.158
+3.92.84.162
+
+[nginx:vars]
+ansible_user=ec2-user
+ansible_shh_pass=DevOps321
