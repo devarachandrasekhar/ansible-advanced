@@ -1,5 +1,6 @@
 - name: install nginx at a time in multiple servers
   hosts: nginx
+  become: yes
 
   tasks:
   - name: install nginx
