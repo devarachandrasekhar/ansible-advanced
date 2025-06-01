@@ -1,0 +1,5 @@
+- name: demo on ansible configuration
+  hosts: ec2-user
+  tasks: 
+  - name: print a message 
+    ansible.builtin.shell: echo hello from ansible server > /tmp/hello.txt
